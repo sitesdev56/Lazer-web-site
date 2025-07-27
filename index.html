@@ -1,50 +1,444 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazer - Refúgio Natural</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="icon" href="./src/img/banner.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>canto das águas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <header class="hero">
+    <!-- Background -->
+    <div class="background-overlay"></div>
 
-        <div class="conteudo-hero">
-            <h1>Fazenda <br> Canto das Águas</h1>
-            <p>Hospedagem, natureza e tranquilidade.</p>
-            <a href="https://wa.me/+5574999816708?text=Ol%C3%A1!%20%F0%9F%8C%BF%0A%0AGostaria%20de%20solicitar%20uma%20reserva%20de%20hospedagem%20na%20Fazenda%20Canto%20das%20%C3%81guas.%0A%F0%9F%8F%A1%20Tipo%20de%20acomoda%C3%A7%C3%A3o%20(Bangal%C3%B4)%3A" class="botao">Fazer reserva</a>
-            <br><br><br>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Lazer</h1>
+                        <p>Refúgio Natural</p>
+                    </div>
+                </div>
 
-            <nav>
-                <a href="https://www.canva.com/design/DAFtlxqzWJs/CVH3wZTQBiDDArvqsVdCxg/view?website#4" class="botao">CARDAPIO</a>
-                <a href="hospedagem.html" class="botao">HOSPEDAGEM</a>
+                <nav class="nav-desktop">
+                    <button class="nav-btn active" data-tab="inicio">
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                    </button>
+                    <button class="nav-btn" data-tab="cardapio">
+                        <i class="fas fa-utensils"></i>
+                        <span>Cardápio</span>
+                    </button>
+                    <button class="nav-btn" data-tab="regras">
+                        <i class="fas fa-scroll"></i>
+                        <span>Regras</span>
+                    </button>
+                    <button class="nav-btn" data-tab="hospedagem">
+                        <i class="fas fa-bed"></i>
+                        <span>Hospedagem</span>
+                    </button>
+                </nav>
 
-            </nav>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-            <footer class="footer">
-                <p>© 2025 Fazenda Canto das Águas. Todos os direitos reservados.</p>
-                <p>Desenvolvido por <a
-                        href="https://www.instagram.com/devdih_ofc?igsh=MTNsZTJ2cHZoZm5qdg%3D%3D&utm_source=qr">Diego
-                        L.S</a>
-            </footer>
+                <div class="nav-mobile">
+                    <select id="mobile-nav">
+                        <option value="inicio">Início</option>
+                        <option value="cardapio">Cardápio</option>
+                        <option value="regras">Regras</option>
+                        <option value="hospedagem">Hospedagem</option>
+                    </select>
+                </div>
+            </div>
         </div>
+    </header>
 
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Início Tab -->
+            <div id="inicio" class="tab-content active">
+                <div class="hero-section">
+                    <h1 class="hero-title">Bem-vindos ao Refúgio Natural</h1>
+                    <p class="hero-description">
+                        Um refúgio natural onde a tranquilidade das águas cristalinas se encontra com a exuberância da mata.
+                        Desconecte-se do mundo e reconecte-se com a natureza em nosso paraíso ecológico.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-water" style="color: #2563eb;"></i>
+                        </div>
+                        <h3>Águas Cristalinas</h3>
+                        <p>Banhe-se em nossas piscinas naturais de água corrente, cercadas pela mata nativa.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tree" style="color: #16a34a;"></i>
+                        </div>
+                        <h3>Natureza Preservada</h3>
+                        <p>Mais de 50 hectares de mata atlântica preservada para você explorar e contemplar.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home" style="color: #d97706;"></i>
+                        </div>
+                        <h3>Hospedagem Única</h3>
+                        <p>Acomodações integradas à natureza para uma experiência inesquecível.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Serra da Mantiqueira</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(99) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>8h às 18h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cardápio Tab -->
+            <div id="cardapio" class="tab-content">
+                <div class="section-header">
+                    <h2>Cardápio Natural</h2>
+                    <p>Sabores da terra, frescos e naturais</p>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-header">
+                            <h3><i class="fas fa-coffee"></i> Café da Manhã</h3>
+                            <p>Servido das 7h às 10h</p>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span>Café colonial completo</span>
+                                <span class="price">R$ 25</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Pães caseiros com geleia</span>
+                                <span class="price">R$ 12</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Frutas da estação</span>
+                                <span class="price">R$ 8</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Suco natural detox</span>
+                                <span class="price">R$ 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-header">
+                            <h3><i class="fas fa-utensils"></i> Almoço</h3>
+                            <p>Servido das 12h às 15h</p>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span>Peixe grelhado com legumes</span>
+                                <span class="price">R$ 35</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Salada orgânica completa</span>
+                                <span class="price">R$ 22</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Risotto de cogumelos</span>
+                                <span class="price">R$ 28</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Água de coco natural</span>
+                                <span class="price">R$ 6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-header">
+                            <h3><i class="fas fa-hamburger"></i> Lanches</h3>
+                            <p>Disponível o dia todo</p>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span>Sanduíche natural</span>
+                                <span class="price">R$ 15</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Açaí na tigela</span>
+                                <span class="price">R$ 18</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Tapioca recheada</span>
+                                <span class="price">R$ 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-header">
+                            <h3><i class="fas fa-glass-cheers"></i> Bebidas</h3>
+                            <p>Refrescantes e naturais</p>
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span>Caipirinha de frutas</span>
+                                <span class="price">R$ 14</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Chá gelado de ervas</span>
+                                <span class="price">R$ 8</span>
+                            </div>
+                            <div class="menu-item">
+                                <span>Refrigerante natural</span>
+                                <span class="price">R$ 6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regras Tab -->
+            <div id="regras" class="tab-content">
+                <div class="section-header">
+                    <h2>Regras de Convivência</h2>
+                    <p>Para preservar nosso paraíso natural</p>
+                </div>
+
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>🌿 Preservação Ambiental</h3>
+                        <ul>
+                            <li>Não retire plantas, flores ou frutos da mata</li>
+                            <li>Descarte o lixo apenas nas lixeiras apropriadas</li>
+                            <li>Não alimente os animais silvestres</li>
+                            <li>Respeite as trilhas demarcadas</li>
+                            <li>Use apenas protetor solar biodegradável</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule-card">
+                        <h3>🏊‍♀️ Uso das Águas</h3>
+                        <ul>
+                            <li>Banho permitido apenas nas áreas demarcadas</li>
+                            <li>Crianças devem estar sempre acompanhadas</li>
+                            <li>Não use sabonetes ou shampoos nas águas naturais</li>
+                            <li>Respeite o limite de pessoas por área</li>
+                            <li>Horário de banho: 8h às 17h</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule-card">
+                        <h3>🎵 Convivência</h3>
+                        <ul>
+                            <li>Mantenha o volume da música baixo</li>
+                            <li>Respeite o silêncio após as 22h</li>
+                            <li>Não é permitido som automotivo</li>
+                            <li>Bebidas alcoólicas com moderação</li>
+                            <li>Proibido fumar nas áreas comuns</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule-card">
+                        <h3>🚗 Acesso e Segurança</h3>
+                        <ul>
+                            <li>Estacione apenas nas vagas demarcadas</li>
+                            <li>Velocidade máxima: 20 km/h na propriedade</li>
+                            <li>Mantenha objetos de valor guardados</li>
+                            <li>Em caso de emergência, procure a recepção</li>
+                            <li>Animais domésticos apenas com autorização</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="warning-card">
+                    <p>⚠️ O não cumprimento das regras pode resultar na solicitação de retirada do local. Vamos juntos preservar este paraíso natural!</p>
+                </div>
+            </div>
+
+            <!-- Hospedagem Tab -->
+            <div id="hospedagem" class="tab-content">
+                <div class="section-header">
+                    <h2>Hospedagem na Natureza</h2>
+                    <p>Acomodações únicas integradas ao ambiente natural</p>
+                </div>
+
+                <div class="accommodation-grid">
+                    <div class="accommodation-card">
+                        <div class="accommodation-header">
+                            <h3><i class="fas fa-tree"></i> Cabana na Árvore</h3>
+                            <p>Uma experiência única no alto da mata</p>
+                        </div>
+                        <div class="accommodation-image">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="accommodation-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Até 2 pessoas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>1 cama de casal</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-wifi"></i>
+                                <span>Wi-Fi disponível</span>
+                            </div>
+                        </div>
+                        <div class="accommodation-footer">
+                            <span class="price">R$ 180/noite</span>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de reservar a Cabana na Árvore no Canto das Águas. Podem me ajudar com a disponibilidade?" class="reserve-btn">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="accommodation-card">
+                        <div class="accommodation-header">
+                            <h3><i class="fas fa-water"></i> Chalé Beira d'Água</h3>
+                            <p>Vista privilegiada para o riacho</p>
+                        </div>
+                        <div class="accommodation-image">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="accommodation-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Até 4 pessoas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>2 quartos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-coffee"></i>
+                                <span>Cozinha equipada</span>
+                            </div>
+                        </div>
+                        <div class="accommodation-footer">
+                            <span class="price">R$ 250/noite</span>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de reservar o Chalé Beira d'Água no Canto das Águas. Podem me ajudar com a disponibilidade?" class="reserve-btn">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="accommodation-card">
+                        <div class="accommodation-header">
+                            <h3><i class="fas fa-home"></i> Casa da Mata</h3>
+                            <p>Conforto familiar no coração da floresta</p>
+                        </div>
+                        <div class="accommodation-image">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="accommodation-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Até 6 pessoas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 quartos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-car"></i>
+                                <span>Estacionamento privativo</span>
+                            </div>
+                        </div>
+                        <div class="accommodation-footer">
+                            <span class="price">R$ 320/noite</span>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de reservar a Casa da Mata no Canto das Águas. Podem me ajudar com a disponibilidade?" class="reserve-btn">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="accommodation-card">
+                        <div class="accommodation-header">
+                            <h3><i class="fas fa-campground"></i> Camping Ecológico</h3>
+                            <p>Para os aventureiros de plantão</p>
+                        </div>
+                        <div class="accommodation-image">
+                            <i class="fas fa-campground"></i>
+                        </div>
+                        <div class="accommodation-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Até 4 pessoas por área</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-restroom"></i>
+                                <span>Banheiros compartilhados</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-fire"></i>
+                                <span>Área para fogueira</span>
+                            </div>
+                        </div>
+                        <div class="accommodation-footer">
+                            <span class="price">R$ 45/noite</span>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de reservar uma vaga no Camping Ecológico no Canto das Águas. Podem me ajudar com a disponibilidade?" class="reserve-btn">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="included-card">
+                    <h3>Incluso em todas as hospedagens:</h3>
+                    <p>• Acesso às piscinas naturais • Trilhas ecológicas • Café da manhã • Wi-Fi • Estacionamento</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-water"></i>
+                        <span>Refúgio - Natural</span>
+                    </div>
+                    <p>Seu refúgio natural na Serra da Mantiqueira. Venha viver momentos únicos em harmonia com a natureza.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> (99) 99999-9999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Itaguçu - BA</p>
+                        <p><i class="fas fa-clock"></i> Funcionamento: 8h às 18h</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Siga-nos</h3>
+                    <p>Acompanhe nossas novidades e dicas de turismo ecológico nas redes sociais.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/cantodasaguas" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Refúgio - Natural. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index,js"></script>
 </body>
-
 </html>
